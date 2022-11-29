@@ -1,0 +1,34 @@
+<div className="inputs">    
+    <mat-form-field appearance="outline" class="full-width" col-50>
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="preencha o nome" [(ngModel)]="model.nome" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>CPF</mat-label>
+        <input matInput placeholder="coloque o CPF" [(ngModel)]="model.cpf" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>telefone</mat-label>
+        <input matInput placeholder="coloque o Telefone" [(ngModel)]="model.telefone" required>
+      </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>email</mat-label>
+        <input matInput placeholder="email" [(ngModel)]="model.email" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>idade</mat-label>
+        <input matInput type="number"  placeholder="coloque a idade" [(ngModel)]="model.idade" required>
+      </mat-form-field>    
+      <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>Sexo</mat-label>
+        <input matInput placeholder="sexo" [(ngModel)]="model.sexo" required>
+      </mat-form-field>    
+      <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>Cargo</mat-label>
+        <input matInput placeholder="Cargo" [(ngModel)]="model.cargo" required>
+      </mat-form-field>       
+    <div class="toolbar___form">
+      <button mat-raised-button routerLink="/pessoaADs">Cancelar</button>
+      <button mat-raised-button color="primary" (click)="save()">Salvar</button>
+    </div>
+  </div>
